@@ -1,0 +1,211 @@
+<html>
+<head>
+    <title>jQuery UI</title>
+    <link rel="stylesheet" type="text/css" href="51-jp-default.css">
+    <link rel="stylesheet" type="text/css" href="config.css">
+    <link rel="stylesheet" type="text/css" href="https://js.cybozu.com/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="https://js.cybozu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://js.cybozu.com/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+
+
+<body>
+
+<button id="button">ボタン</button>
+<div id="dialog"><!--全体-->
+
+
+    <div class="block"><!--パスワードの長さ-->
+
+        <label>
+            <span class="kintoneplugin-label">パスワードの長さ</span>
+            <span class="kintoneplugin-require">*</span>
+        </label>
+        <p class="description">生成するパスワードの文字数を指定してください<span class="example">(例：8)</span></p>
+
+        <div class="kintoneplugin-input-outer">
+            <input id="password_length" type="text" class="kintoneplugin-input-text">
+        </div>
+    </div><!--パスワードの長さ終わり-->
+
+
+    <div class="block"> <!--パスワードに大文字・小文字・数字のどれを使うかのチェックボックス-->
+
+        <label>
+            <span class="kintoneplugin-label">使用文字</span>
+            <span class="kintoneplugin-require">*</span>
+        </label>
+
+        <table><!--大文字・小文字・数字のチェックボックス-->
+            <tr>
+                <td>
+                    <div class="kintoneplugin-input-checkbox">
+                        <span class="kintoneplugin-input-checkbox-item">
+                            <input type="checkbox" name="checkbox" value="0" id="upper_case" checked><label for="upper_case">大文字</label>
+                        </span>
+                    </div>
+                </td>
+                <td>
+                    <div class="kintoneplugin-input-checkbox">
+                        <span class="kintoneplugin-input-checkbox-item">
+                            <input type="checkbox" name="checkbox" value="0" id="lower_case" checked><label for="lower_case">小文字</label>
+                        </span>
+                    </div>
+                </td>
+                <td>
+                    <div class="kintoneplugin-input-checkbox">
+                        <span class="kintoneplugin-input-checkbox-item">
+                            <input type="checkbox" name="checkbox" value="0" id="number" checked><label for="number">数字</label>
+                        </span>
+                    </div>
+
+                </td>
+            </tr>
+
+        </table><!--大文字・小文字・数字のチェックボックス終わり-->
+
+    </div><!--パスワードに大文字・小文字・数字のどれを使うかのチェックボックス終わり-->
+
+
+    <div class="block"> <!--パスワードに使う記号のチェックボックス-->
+
+        <label>
+            <span class="kintoneplugin-label">使用記号</span>
+            <span class="kintoneplugin-require">*</span>
+        </label>
+
+        <div><!--ボタン-->
+            <button id="all_check" type="submit" class="kintoneplugin-button-little">全てチェックする</button>
+            <button id="all_cancel" type="submit" class="kintoneplugin-button-little">全てのチェックを外す</button>
+        </div><!--ボタン-->
+
+        <div class="checkbox"><!--チェックボックのスペース全体-->
+
+            <table><!--記号チェックボックス-->
+                <tr><!--記号チェックボックス1行目終わり-->
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="sharp"><label for="sharp">#</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="doller"><label for="doller">$</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="percent"><label for="percent">%</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="and"><label for="doller">&</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="hat"><label for="hat">^</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="colon"><label for="colon">:</label>
+                            </span>
+                        </div>
+                    </td>
+
+                </tr><!--記号チェックボックス1行目終わり-->
+
+                <tr><!--記号チェックボックス２行目-->
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="semicolon"><label for="semicolon">;</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="at"><label for="at">@</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="question"><label for="question">?</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="exclamation"><label for="exclamation">!</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="hyphen"><label for="hyphen">-</label>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="kintoneplugin-input-checkbox">
+                            <span class="kintoneplugin-input-checkbox-item">
+                                <input type="checkbox" name="checkbox" value="0" id="underbar"><label for="underbar">_</label>
+                            </span>
+                        </div>
+                    </td>
+
+                </tr><!--記号チェックボックス２行目終わり-->
+            </table><!--記号チェックボックス終わり-->
+
+        </div><!--パスワードに使うチェックボックス終わり-->
+
+
+    </div><!--全体終わり-->
+<script>
+    $(function(){
+
+        $("#dialog").css("display","none");
+
+        $("#dialog").dialog({
+            autoOpen:false,
+            draggable:false,
+            show:"slide",
+            hide:"fadeOut",
+            width:500,
+            buttons:{
+                "設定":function(){
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+        $("#button").click(function(){
+            $("#dialog").dialog("open");
+
+        });
+    });
+</script>
+
+</body>
+
+
+</html>

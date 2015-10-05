@@ -1,0 +1,51 @@
+
+.block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.description{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+.example{
+    color: green;
+}
+
+.checkbox{
+    margin-top: 15px;
+
+}
+
+.submit{
+    /*margin-top: 40px;
+    margin-right:120px;*/
+}
+
+.kintoneplugin-button-little {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    display: inline-block;
+    padding: 6px 30px;
+    outline: none;
+    border: 1px solid #a2a2a2;
+    border-radius: 4px;
+    background-color: #ececec;
+    background-image: linear-gradient(rgba(236,236,236,0),rgba(212,212,212,.85) 85%,#d4d4d4 100%);
+    box-shadow: inset 0 1px 0 white,0 2px 2px rgba(161,161,161,.35);
+    color: #4d4d4d;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+    font-weight: 300;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFECECEC', endColorstr='#FFD4D4D4');
+    cursor: pointer;
+    -webkit-transition: background-color .1s linear;
+    -moz-transition: background-color .1s linear;
+    transition: background-color .1s linear;
+    user-select: none;
+}
